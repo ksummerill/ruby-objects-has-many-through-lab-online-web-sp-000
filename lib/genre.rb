@@ -22,7 +22,8 @@ class Genre
   # iterates over the genre's collection of songs and collects the artist that owns each song.
   def artists
     # binding.pry
-    Song.all.select {|artist| artist.genre == self}
+    # Song.all.select {|artist| artist.genre == self}
+    Song.all.select {|artist| song.artist.name == self}
   end
 
 
