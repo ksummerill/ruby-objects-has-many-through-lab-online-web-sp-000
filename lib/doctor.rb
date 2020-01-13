@@ -30,6 +30,7 @@ class Doctor
     # binding.pry
     self.appointments.collect do |patient|
       patient.appointments
+    end
   end
 
 end
