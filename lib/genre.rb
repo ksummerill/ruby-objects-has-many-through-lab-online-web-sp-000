@@ -21,7 +21,7 @@ class Genre
 
   # iterates over the genre's collection of songs and collects the artist that owns each song.
   def artists
-    songs.collect {|artist| genre.artists == self}
+    Song.all.collect {|artist| song.artist == self}
   end
 
 
