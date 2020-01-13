@@ -16,7 +16,7 @@ class Patient
   # takes in an argument of a doctor and a date and creates a new Appointment.
   # The Appointment should know that it belongs to the patient.
   def new_appointment(doctor, date)
-    Appointment.new(self)
+    Appointment.new(doctor, date, self)
   end
 
   # iterates through the Appointments array and
