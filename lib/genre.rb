@@ -15,7 +15,7 @@ class Genre
 
   # iterates through all songs and finds the songs that belong to that genre.
   def songs
-    binding.pry
+    # binding.pry
     Song.all.select {|songs| songs.genre == self }
   end
 
