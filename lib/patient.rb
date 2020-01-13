@@ -22,7 +22,7 @@ class Patient
   # iterates through the Appointments array and
   # returns Appointments that belong to the patient.
   def appointments
-
+    Appointment.all.select {|appointments| appointments.patient = self}
   end
 
   # that iterates over that patient's Appointments and
