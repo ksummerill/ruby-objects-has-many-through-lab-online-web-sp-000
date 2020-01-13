@@ -21,6 +21,7 @@ class Doctor
 
   # iterates through all Appointments and finds those belonging to this doctor.
   def appointments
+    binding.pry
     Appointment.all.find {|appointments| appointments.doctor == self}
   end
 
