@@ -21,7 +21,7 @@ class Doctor
 
   # iterates through all Appointments and finds those belonging to this doctor.
   def appointments
-    Appointments.all.find {|appointments| appointments.doctor == self}
+    Appointment.all.find {|appointments| appointments.doctor == self}
   end
 
   # iterates over that doctor's Appointments and
