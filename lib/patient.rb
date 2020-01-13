@@ -30,7 +30,7 @@ class Patient
   # collects the doctor that belongs to each Appointment.
   def doctors
     # binding.pry
-    self.appointment.collect {|appointment| appointment.doctor}
+    self.appointments.collect {|appointment| appointment.doctor}
   end
 
 end
