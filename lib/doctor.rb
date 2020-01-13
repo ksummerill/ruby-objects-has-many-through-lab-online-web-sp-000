@@ -27,7 +27,6 @@ class Doctor
   # iterates over that doctor's Appointments and
   # collects the patient that belongs to each Appointments.
   def patients
-    binding.pry
     appointments.collect {|appointment| appointment.patient}
   end
 
