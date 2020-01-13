@@ -17,7 +17,6 @@ class Artist
 
   # given a name and genre, creates a new song associated with that artist
   def new_song(name, genre)
-    # binding.pry
     Song.new(name, self, genre)
   end
 
