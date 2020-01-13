@@ -23,7 +23,7 @@ class Genre
   def artists
     binding.pry
     # Song.all.select {|artist| artist.genre == self}
-    Song.all.select {|artist| songs.artist.name == self}
+    Song.all.select {|artist| songs.name == self}
   end
 
 
