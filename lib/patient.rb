@@ -25,4 +25,10 @@ class Patient
 
   end
 
+  # that iterates over that patient's Appointments and
+  # collects the doctor that belongs to each Appointment.
+  def doctors
+
+  end
+
 end
