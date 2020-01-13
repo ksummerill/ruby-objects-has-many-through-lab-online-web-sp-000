@@ -17,7 +17,7 @@ class Patient
   # The Appointment should know that it belongs to the patient.
   def new_appointment(doctor, date)
     binding.pry
-    Appointment.new(self, doctor, date)
+    Appointment.new(doctor, self, date)
   end
 
   # iterates through the Appointments array and
