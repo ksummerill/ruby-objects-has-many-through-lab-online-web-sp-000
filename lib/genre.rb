@@ -24,7 +24,7 @@ class Genre
   def artists
     binding.pry
     # Song.all.select {|artist| artist.genre == self}
-    Song.all.select {|artist| artist.name.genre == self}
+    @@all.collect {|artist| artist.name.genre == self}
   end
 
 
