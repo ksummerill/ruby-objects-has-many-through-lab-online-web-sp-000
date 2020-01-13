@@ -28,7 +28,7 @@ class Doctor
   # collects the patient that belongs to each Appointments.
   def patients
     binding.pry
-    appointments.map {|appointment| appointment.patient}
+    appointments.collect {|appointment| appointment.patient}
   end
 
 end
