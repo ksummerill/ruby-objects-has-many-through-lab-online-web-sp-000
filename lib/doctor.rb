@@ -15,7 +15,7 @@ class Doctor
 
   # takes in a an instance of the Patient class and a date, and creates a new Appointment.
   # That Appointment should know that it belongs to the doctor
-  def new_appointment(Patient, date)
+  def new_appointment(patient, date)
 
   end
 
